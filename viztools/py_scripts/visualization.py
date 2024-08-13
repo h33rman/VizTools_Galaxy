@@ -1,6 +1,8 @@
 import numpy as np
 from . import the_gaussian_kernel
 import matplotlib.pyplot as plt
+import os
+from django.conf import settings
 
 
 def normalize_visualization(visual2_d):
@@ -54,7 +56,7 @@ class Visualizer:
         plt.show()
 
         # Save the plot
-        image_path= 'static/galaxy_visualization.png'
+        image_path = os.path.join(settings.STATICFILES_DIRS[0], 'galaxy_visualization.png')
         plt.savefig(image_path)
 
         return image_path

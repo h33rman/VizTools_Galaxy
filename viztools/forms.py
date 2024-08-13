@@ -1,7 +1,9 @@
-# forms.py
-
 from django import forms
 
-class DataFileForm(forms.Form):
-    snap_file_path = forms.CharField(label='Snap File Path', max_length=500)
-    catalog_file_path = forms.CharField(label='Catalog File Path', max_length=500)
+class FileSelectionForm(forms.Form):
+    snap_file = forms.CharField(label='Snapshot File Path', max_length=255)
+    catalog_file = forms.CharField(label='Catalog File Path', max_length=255)
+
+class GalaxySelectionForm(forms.Form):
+    galaxy_index = forms.IntegerField(label='Galaxy Index')
+    visualization_size = forms.IntegerField(label='Visualization Size', required=False)

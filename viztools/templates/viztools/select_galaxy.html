@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Select Galaxy</title>
+</head>
+<body>
+    <h1>Select Galaxy for Visualization</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Submit </button>
+    </form>
+</body>
+</html>

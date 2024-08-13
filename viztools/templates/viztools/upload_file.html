@@ -1,14 +1,14 @@
-<!-- upload.html -->
-
+<!-- upload_file.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Upload Data Files</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Files</title>
 </head>
 <body>
-    <h1>Enter File Paths</h1>
-    <form method="post">
+    <h1>Select Snapshot and Catalog Files</h1>
+    <form method="POST">
         {% csrf_token %}
         {{ form.as_p }}
         <button type="submit">Submit</button>
