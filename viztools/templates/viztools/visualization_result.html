@@ -5,6 +5,9 @@
 </head>
 <body>
     <h1>Galaxy Visualization Result</h1>
-    <img src="/{{ image_path }}" alt="Galaxy Visualization">
+    <!--/ Show image output: 'static/galaxy_visualization.png' -->
+    {% load static %}
+<img src="{% static 'galaxy_visualization.png' %}" alt="Galaxy Visualization">
+
 </body>
 </html>
