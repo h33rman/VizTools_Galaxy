@@ -1,5 +1,5 @@
 import numpy as np
-import the_gaussian_kernel
+from . import the_gaussian_kernel
 import matplotlib.pyplot as plt
 
 
@@ -52,3 +52,9 @@ class Visualizer:
         plt.ylabel('Y axis (kpc)')
         plt.colorbar(label='Intensity')
         plt.show()
+
+        # Save the plot
+        image_path= 'static/galaxy_visualization.png'
+        plt.savefig(image_path)
+
+        return image_path
