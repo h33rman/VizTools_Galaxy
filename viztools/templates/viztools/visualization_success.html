@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Visualization Success</title>
+    <title>Galaxy Visualization Result</title>
 </head>
 <body>
-    <h1>Visualization Created Successfully!</h1>
-    <img src="{{ file_path }}" alt="Visualization">
+    <h1>Galaxy Visualization Result</h1>
+    {% load static %}
+    <img src="{% static 'galaxy_visualization.png' %}" alt="Galaxy Visualization">
 </body>
 </html>
